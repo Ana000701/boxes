@@ -1,0 +1,10 @@
+.table-button {
+  background-color: rgb(126, 162, 215);
+  padding: 4px 12px;
+  color: white;
+}
+
+.table-width {
+  width: 70%;
+  margin: 0 auto;
+}
