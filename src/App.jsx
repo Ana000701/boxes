@@ -1,16 +1,20 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from './pages/Home';
+import Map from './pages/Map';
+import logo from './assets/LOGO.png';
+
 function App() {
   return (
-    <div className='flex flex-col md:flex-row'>
-      <div className='bg-red-200 p-2'>Lorem ipsum dolor sit amet.</div>
-      <div className='bg-blue-200 p-2'>Lorem ipsum dolor sit amet.</div>
-      <div className='bg-green-200 p-2'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ut.
+    <>
+      <Navbar logo={logo}></Navbar>
+      <div className="xl:container mx-auto">
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/map" element={<Map/>}></Route>
+        </Routes>
       </div>
-      <div className='bg-orange-200 p-2'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-        officiis!
-      </div>
-    </div>
+    </>
   );
 }
 
