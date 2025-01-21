@@ -2,16 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from './pages/Home';
 import Map from './pages/Map';
-import logo from './assets/LOGO.png';
+import logo from './assets/logo.png';
 
 function App() {
   return (
     <>
-      <Navbar logo={logo}></Navbar>
       <div className="xl:container mx-auto">
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/map" element={<Map/>}></Route>
+          <Route path="/" element={<Home><Navbar logo={logo}></Navbar></Home>}></Route>
+          <Route path="/map" element={<Map logo={logo}></Map>}></Route>
         </Routes>
       </div>
     </>
