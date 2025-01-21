@@ -1,6 +1,9 @@
-function Home(){
+function Home({children}){
     return (
-        <>這是首頁</>
+        <>
+        {children}
+        這是首頁
+        </>
     )
 }
 export default Home;
