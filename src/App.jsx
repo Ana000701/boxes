@@ -5,7 +5,7 @@ import Map from "./pages/Map";
 import logo from "./assets/logo.png";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
-import Filtering from "components/Filtering";
+import Filtering from "../components/Filtering";
 
 function App() {
   return (

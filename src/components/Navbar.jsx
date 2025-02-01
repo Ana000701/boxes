@@ -7,6 +7,7 @@ function Navbar({ logo }) {
         <img src={logo} alt='紙箱轉運站' height='56' width='235' />
       </Link>
       <div className='flex justify-between items-center gap-5'>
+        <Link to='/table'>Table</Link>
         <Link to='/map'>紙箱地圖</Link>
         <Link
           to='/signin'
