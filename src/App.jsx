@@ -5,6 +5,7 @@ import Map from "./pages/Map";
 import logo from "./assets/logo.png";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Filtering from "components/Filtering";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/map' element={<Map logo={logo}></Map>}></Route>
           <Route path='/signin' element={<Signin logo={logo}></Signin>}></Route>
           <Route path='/signup' element={<Signup logo={logo}></Signup>}></Route>
+          <Route path='/table' element={<Filtering logo={logo}></Filtering>}></Route>
         </Routes>
       </div>
     </>
